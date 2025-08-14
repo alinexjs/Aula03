@@ -1,0 +1,21 @@
+    
+    .end-card{
+        margin: 2%;
+        width: 300%;
+        
+    }
+    .card-title{
+        font-family:cursive;
+        color: #797979;
+        font-size: 1.3em;
+       
+    }
+    .card-text{
+        color: rgb(185, 62, 99);
+    }
+    .bl-cor{
+        background-color: rgb(241, 106, 118);
+        border-radius: 2%;
+        padding: 3%;
+    }
+    
