@@ -28,31 +28,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#">Contato</a>
+              <a class="nav-link active text-light" aria-current="page" href="#login">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Sobre</a>
+              <a class="nav-link text-light" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle text-light" href="#produtos" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Produtos
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Materiais Escolares</a></li>
-                <li><a class="dropdown-item" href="#">Decoração</a></li>
+                <li><a class="dropdown-item" href="#produtos">Materiais Escolares</a></li>
+                <li><a class="dropdown-item" href="#produtos">Decoração</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                <li><a class="dropdown-item" href="#produtos">Acessórios</a></li>
               </ul>
             </li>
 
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
-          </form>
+
         </div>
       </div>
     </nav>
@@ -76,6 +73,41 @@
         </div>
 
         <!-- END CAROUSEL-->
+
+
+        <!-- SOBRE -->
+        <br>
+        <section id="sobre" class="bg-light py-5">
+          <div class="container">
+            <div class="row align-items-center">
+
+              <!-- Texto -->
+              <div class="col-md-6">
+                <h1 class="mb-4 text-danger">Sobre a Kitty's</h1>
+                <p class="lead" style="color:#7a7a7a;">
+                  Bem-vindo(a) à <strong>Kitty's</strong>, um cantinho cheio de fofura e carinho! Aqui você encontra
+                  produtos inspirados no universo kawaii, perfeitos para quem ama papelaria fofa, acessórios
+                  encantadores, e itens colecionáveis que aquecem o coração.
+                </p>
+                <p style="color:#7a7a7a;">
+                  Trabalhamos com muito amor para trazer novidades que combinam com o seu estilo doce, criativo e único.
+                  Desde mimos para presentear até itens para deixar sua rotina mais alegre, a Kitty's é o lugar ideal
+                  para quem vive com brilho nos olhos!
+                </p>
+              </div>
+              <br>
+
+
+              <!-- Imagem decorativa -->
+              <div class="col-md-6 text-center">
+                <img src="assets/Hello_kitty_character_portrait.png" alt="Sobre a Kitty's" width="400" height="600"
+                  class="img-fluid rounded" style="max-width: 80%; ">
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- END SOBRE-->
 
         <!--INICIO CARD-1 -->
         <br>
@@ -129,7 +161,7 @@
         <!-- INICIO CARDS-2 -->
         <br>
         <h2>Produtos Diversos:</h2>
-        <div class="bl-cor">
+        <div class="bl-cor " id="produtos">
 
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -217,43 +249,52 @@
         </div>
         <!-- END CARDS-2 -->
 
-        <!-- SOBRE -->
-        <br>
-        <section id="sobre" class="bg-light py-5">
-          <div class="container">
-            <div class="row align-items-center">
 
-              <!-- Texto -->
-              <div class="col-md-6">
-                <h1 class="mb-4 text-danger">Sobre a Kitty's</h1>
-                <p class="lead" style="color:#7a7a7a;">
-                  Bem-vindo(a) à <strong>Kitty's</strong>, um cantinho cheio de fofura e carinho! Aqui você encontra
-                  produtos inspirados no universo kawaii, perfeitos para quem ama papelaria fofa, acessórios
-                  encantadores, e itens colecionáveis que aquecem o coração.
-                </p>
-                <p style="color:#7a7a7a;">
-                  Trabalhamos com muito amor para trazer novidades que combinam com o seu estilo doce, criativo e único.
-                  Desde mimos para presentear até itens para deixar sua rotina mais alegre, a Kitty's é o lugar ideal
-                  para quem vive com brilho nos olhos!
-                </p>
+
+        <br>
+        <div class="bl-cor2" id="login">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center text-light">Login</h2>
+
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Primeiro Nome" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Último Nome" aria-label="Last name">
+                </div>
               </div>
               <br>
 
-
-              <!-- Imagem decorativa -->
-              <div class="col-md-6 text-center">
-                <img src="assets/Hello_kitty_character_portrait.png" alt="Sobre a Kitty's" width="400" height="600"
-                  class="img-fluid rounded" style="max-width: 80%; ">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Seu E-mail" aria-label="Username"
+                  aria-describedby="addon-wrapping">
               </div>
+              <br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Senha</span>
+                <input type="password" class="form-control" placeholder="Senha" aria-label="senha"
+                  aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <div class="d-grid gap-2 col-2 mx-auto">
+                <input class="btn btn-danger" type="submit" value="Submit">
+              </div>
+
             </div>
-
           </div>
-        </section>
-        <!-- END SOBRE-->
-         <br>
-         <h2 class="text-center"> Contato </h2>
 
-        
+        </div>
+        <!--IMAGEM-->
+        <div class="col-md-6 text-center">
+          <img src="assets/channels4_profile-removebg-preview.png" alt="Sobre a Kitty's" width="400" height="600"
+            class="img-fluid rounded" style="max-width: 80%;">
+        </div>
+
+
+
 
 
       </div>
